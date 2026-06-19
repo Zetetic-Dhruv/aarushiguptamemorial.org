@@ -1,0 +1,11 @@
+{
+  "name": "aarushi-memorial",
+  "version": "0.2.0",
+  "description": "aarushiguptamemorial.org — a memorial site for Aarushi Gupta and the family-funded education fund in her name. Static HTML, self-contained styles, no build framework.",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp index.html her.html fund.html apply.html CNAME robots.txt sitemap.xml dist/ && cp -r images dist/ && touch dist/.nojekyll",
+    "deploy": "git push live main"
+  },
+  "type": "commonjs"
+}
